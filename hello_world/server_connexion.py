@@ -2,7 +2,7 @@ from flask import render_template
 import connexion
 
 # Create the application instance
-app = connexion.App(__name__, specification_dir='archive/spec2')
+app = connexion.App(__name__, specification_dir='../archive/spec2')
 
 # Read the swagger.yml file to configure the endpoints
 app.add_api('swagger.yml')
